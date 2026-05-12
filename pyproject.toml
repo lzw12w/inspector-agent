@@ -1,0 +1,21 @@
+[project]
+name = "ios-inspector-agent"
+version = "0.1.0"
+description = "Conversational agent for iOS runtime inspection via SAInspector HTTP server"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40.0",
+    "prompt_toolkit>=3.0.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+ios-inspector-agent = "ios_inspector_agent.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ios_inspector_agent*"]
