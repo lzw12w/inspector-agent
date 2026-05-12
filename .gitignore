@@ -15,6 +15,7 @@ build/
 dist/
 *.egg-info/
 .eggs/
+*.bak
 
 # Test and type-checker caches
 .pytest_cache/
